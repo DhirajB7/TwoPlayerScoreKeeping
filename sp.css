@@ -1,0 +1,60 @@
+html{
+    height: 100%;
+}
+body{
+    background:url("background.jpg");
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    padding: 20px 0PX 20px 0PX;
+    color:midnightblue;
+}
+
+#dataEntryButton{
+    margin:auto;
+    display:block;
+    background-color:
+lightcyan;
+color:
+green;
+}
+
+#maxScore{
+    padding-left: 60px;
+    padding-top: 7px;
+}
+
+.statusHidden{
+    display:none;
+}
+
+.statusVisible{
+    display:block;
+}
+
+#scoreMax{
+    margin:30px auto 30px auto;
+    text-align: center;
+    color:darkred;
+    font-size: x-large;
+}
+
+#playerOneCard{
+    width:34%;
+    float: left;
+}
+
+#playerTwoCard{
+    width:34%;
+    float: right;
+}
+
+#resetButon{
+    margin:auto;
+    display:block;
+    background-color:
+    lightcyan;
+    color:
+    green;
+}
