@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--DONE BY DHIRAJ,****AS A PART OF LEARNING********* +91 - 8880093594-->
+<!--bond.dhiraj@gmail.com-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2 PLAYER SCORE</title>
+    <link rel="stylesheet" type="text/css" href="sp.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Two Player Score </h1>
+
+
+        <!-- Button trigger modal -->
+        <button id="dataEntryButton" type="button" class="btn btn-light btn-lg rounded-pill" data-toggle="modal" data-target="#exampleModal"
+            data-toggle="tooltip" data-placement="BOTTOM" title="ENTER NAME OF TWO PLAYERS AND WINNING SCORE">
+            Enter Data
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Score Keeper</h5>
+                    </div>
+                    <div class="modal-body">
+                       
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"
+                            id="closeButton">Close</button>
+                        <button type="button" class="btn btn-success" id="saveButton">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="scoreCard" class="statusHidden">
+            
+            <div id="scoreMax">Winning Score : <span id="maxScoreSpan"></span></div>
+
+            <div id="containerforscore">
+            <!--Player 1-->
+            <div id="playerOneDetail">
+
+                <div class="card text-center rounded-pill" id="playerOneCard">
+                    <h5 class="card-header"><div id="playerOneNameDiv"><samp class="p1Name">P1Name</samp></div></h5>
+                    <div class="card-body">
+                      <h5 class="card-title"><div id="playerOneScoreDiv">Current Score : <samp id="p1Score">p1Score</samp></div></h5>
+                      <button id="p1Buton" type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="BOTTOM" title="INCREASE ONE POINT">One Point To <samp class="p1Name">P1Name</samp></button>
+                    </div>
+                </div>
+            </div>
+
+               <!--Player 2-->
+               <div id="playerTwoCard" id="playerTwoCard">
+
+                <div class="card text-center rounded-pill">
+                    <h5 class="card-header"><div id="playerTwoNameDiv"><samp class="p2Name">P2Name</samp></div></h5>
+                    <div class="card-body">
+                      <h5 class="card-title"><div id="playerTwoScoreDiv">Current Score : <samp id="p2Score">p2Score</samp></div></h5>
+                      <button id="p2Buton" type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="BOTTOM" title="INCREASE ONE POINT">One Point To <samp class="p2Name">P2Name</samp></button>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+
+            <!--Buttons-->
+            
+            <button id="resetButon" type="button" class="btn btn-warning rounded-pill" data-toggle="tooltip" data-placement="BOTTOM" title="SCORES WILL BE ZERO, PLAYERS(OR TEAMS) AND WINNING SCORE WILL REMAIN SAME">RESET</button>
+
+    </div>
+
+
+    <script src="sp.js"></script>
+
+</body>
+
+</html>
